@@ -88,6 +88,46 @@ PC note: PC went off mid task. Lesson learned — save with
 Ctrl+S every 10 minutes and push to GitHub regularly so
 no work is ever lost.
 
+### Task 4 — Salary Hike Analysis
+
+Columns used: PercentSalaryHike, MonthlyIncome, 
+PerformanceRating
+
+Formulas used:
+
+New Salary after hike:
+=MonthlyIncome*(1+PercentSalaryHike/100)
+
+Annual Raise Amount:
+=(NewSalary-MonthlyIncome)*12
+
+Underpaid High Performer Flag:
+=IF(AND(PercentSalaryHike<12,PerformanceRating=4),"Underpaid High Performer","Normal")
+
+Key finding: Zero employees flagged as Underpaid High
+Performers. Either all high performers received above
+12% hike or no employee holds a PerformanceRating of 4.
+
+Verification method: Manually edited one employee record
+to PerformanceRating=4 and PercentSalaryHike=11 to test
+the flag formula. Employee was correctly flagged as
+"Underpaid High Performer" confirming the formula works.
+Record reverted after testing.
+
+Key finding: All 226 employees with PerformanceRating of 4
+received 12% or above salary hike. IBM is correctly
+rewarding high performers — zero underpaid high performers
+in the dataset.
+
+Business insight: IBM's compensation strategy appears to
+be aligned with performance. No immediate action needed
+for high performer retention from a salary perspective.
+
+What I learned: Always test formulas by manually editing
+a test case to confirm logic works correctly before
+trusting the results. This is called unit testing.
+
+
 ---
 
 ## 🔑 Key Formulas Learned
