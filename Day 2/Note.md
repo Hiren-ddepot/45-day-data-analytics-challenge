@@ -3,7 +3,7 @@
 **Date:** 29-03-2026
 **Dataset:** IBM HR Analytics (1,470 employees)
 **Continuation of:** Day 1 — same dataset, new functions
-**Time spent:** 
+**Time spent:** 03:15:28
 
 ---
 
@@ -127,17 +127,131 @@ What I learned: Always test formulas by manually editing
 a test case to confirm logic works correctly before
 trusting the results. This is called unit testing.
 
+### Task 5 — Work Life Balance & Overtime Report
+
+Columns used: WorkLifeBalance, OverTime
+
+WLB Label formula:
+=IFS(D2=1,"Poor",D2=2,"Fair",D2=3,"Good",D2=4,"Excellent")
+
+Overtime Rate formula:
+=COUNTIFS(WorkLifeBalanceCol,"Poor",OvertimeCol,"Yes")/COUNTIF(WorkLifeBalanceCol,"Poor")
+
+Results:
+Poor      → 80 employees  | 22 on OT  | 28%
+Fair      → 344 employees | 104 on OT | 30%
+Good      → 893 employees | 254 on OT | 28%
+Excellent → 153 employees | 36 on OT  | 24%
+
+Key finding: Fair WorkLifeBalance group has the highest overtime rate
+at 30%. Excellent WorkLifeBalance group has the lowest at 24%.
+Surprisingly Poor WorkLifeBalance does not have the highest overtime
+rate suggesting overtime is not the sole driver of poor
+work life balance.
+
+Business insight: IBM should investigate other factors
+beyond overtime that contribute to poor work life balance
+such as management quality, job demands, and stress levels.
+Reducing overtime alone will not solve the WLB problem.
+
+What I learned: Data does not always confirm what you
+expect. Surprising results are often the most valuable
+insights — they challenge assumptions and lead to deeper
+investigation.
+
 
 ---
 
 ## 🔑 Key Formulas Learned
+
+### EDATE
+=EDATE(TODAY(), -YearsAtCompany*12)
+Goes forward or backward by a number of months from a date.
+Used for: estimating join date and calculating next review date.
+
+### IFS for text labels
+=IFS(D2=1,"Poor",D2=2,"Fair",D2=3,"Good",D2=4,"Excellent")
+Assigns a text label based on a numeric code.
+Used for: WLB labels and Seniority titles.
+
+### EDATE for future dates
+=EDATE(EstimatedJoinDate,(INT(YearsAtCompany/2)+1)*24)
+Calculates a future date by adding months to a base date.
+Used for: next performance review date.
+
+### IF with AND
+=IF(AND(O2<12,S2=4),"Underpaid High Performer","Normal")
+Checks multiple conditions simultaneously before flagging.
+Used for: identifying underpaid high performers.
+
+### COUNTIFS for summary tables
+=COUNTIFS(WLBCol,"Poor",OvertimeCol,"Yes")
+Counts rows that meet multiple conditions at once.
+Used for: overtime count per WLB group.
+
+### Text concatenation with &
+=EmployeeID&" is a "&SeniorityTitle&" in the "&Department
+Combines multiple columns into one readable sentence.
+Used for: employee profile text card.
+
+### TRIM and PROPER
+=TRIM(PROPER(JobRole))
+PROPER capitalizes first letter of each word.
+TRIM removes extra spaces before and after text.
+Used for: cleaning JobRole text in seniority title.
+
+### LOWER
+=LOWER(MaritalStatus)
+Converts text to lowercase for natural reading in sentences.
+Used for: making marital status read naturally in profile card.
+
+### YEAR(TODAY())
+=YEAR(TODAY())
+Returns the current year dynamically.
+Used for: making date formulas work in any future year
+without hardcoding 2024.
 
 
 ---
 
 ## 😤 What Was Hard
 
+### 1. EDATE logic for Next Review Date
+Understanding how to combine EDATE with INT and YearsAtCompany
+to calculate a future review date was confusing at first.
+The math of (INT(YearsAtCompany/2)+1)*24 took time to
+understand — it finds how many 2-year cycles have passed
+then adds one more cycle to get the next upcoming review.
 
 ---
 
 ## 🔄 What I'd Do Differently
+
+### 1. Save and push to GitHub more frequently
+My PC went off mid task and I almost lost my work.
+Going forward I will save with Ctrl+S every 10 minutes
+and push to GitHub after completing each task — not just
+at the end of the day.
+
+### 2. Check column references before using full column
+I wasted time investigating why COUNTIF(S:S,4) returned 0.
+Next time I will use exact range references from the start
+e.g. S2:S1471 instead of S:S to avoid data type issues.
+
+### 3. Scan all dataset columns before starting
+I would spend 5 minutes at the beginning reading through
+all column names and understanding what each one contains
+before writing any formula. This prevents surprises mid task
+like discovering a column contains text instead of numbers.
+
+### 4. Plan Sheet 2 columns in advance
+I kept adding columns as I went which made the sheet
+disorganised. Next time I will map out all the columns
+I need for the day before building anything so Sheet 2
+stays clean and structured from the start.
+
+### 5. Question my assumptions before interpreting results
+I assumed Poor WLB would have the highest overtime rate
+but the data said otherwise. Going forward I will let
+the data tell the story rather than expecting a specific
+outcome before running the analysis.
