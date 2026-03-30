@@ -52,6 +52,42 @@ Result: 1,470 employees assigned a proper seniority title
 combining JobLevel and JobRole.
 Example: Mid-Level Sales Executive
 
+### Task 3 — Next Performance Review Date
+
+Columns used: YearsAtCompany
+
+Dataset adjustment: No HireDate column available.
+Estimated join date by going back from today using EDATE.
+Used YEAR(TODAY()) instead of hardcoding year so formula
+stays accurate in future years.
+
+Formulas used:
+
+Estimated Join Date:
+=EDATE(TODAY(),-YearsAtCompany*12)
+
+Next Review Date:
+=EDATE(EstimatedJoinDate,(INT(YearsAtCompany/2)+1)*24)
+
+Review Flag:
+=IF(NextReviewDate<=EDATE(TODAY(),12),"Due Soon","Upcoming")
+
+Result: 1,470 employees assigned an estimated join date,
+next review date, and review flag.
+
+Key finding: 796 employees are Due Soon for a performance review.
+
+What I learned:
+- EDATE is cleaner than DATE for going backwards in time
+- Using YEAR(TODAY()) instead of hardcoding 2026 makes
+  formulas maintainable for future years
+- Always think about whether a formula will still work
+  in 2 years time 
+
+PC note: PC went off mid task. Lesson learned — save with
+Ctrl+S every 10 minutes and push to GitHub regularly so
+no work is ever lost.
+
 ---
 
 ## 🔑 Key Formulas Learned
