@@ -31,7 +31,7 @@
 | Day | Project | Dataset | Key Skills |
 |-----|---------|---------|------------|
 | Day 1 | Salary & Tax Calculator | IBM HR Analytics | Nested IF, AVERAGEIF, SUMIF |
-| Day 2 | Employee Tenure Analysis | IBM HR Analytics | DATEDIF, TEXT, CONCATENATE |
+| Day 2 | Employee Tenure Analysis | IBM HR Analytics | EDATE, IFS, COUNTIF, IF AND |
 | Day 3 | Order Invoice Lookup System | Superstore Sales | VLOOKUP, IFERROR |
 | Day 4 | Sales Performance Tracker | Superstore Sales | XLOOKUP, IFS, SUMIFS |
 | Day 5 | Profitability Pivot Analysis | Superstore Sales | Pivot Tables, Calculated Fields |
