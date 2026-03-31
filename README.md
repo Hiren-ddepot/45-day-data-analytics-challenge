@@ -43,6 +43,42 @@
 
 ---
 
+### Excel (Days 1–10)
+| Day | Project | Dataset | Key Skills |
+|-----|---------|---------|------------|
+| Day 1 | Salary Tax Calculator, Department Audit, Attrition Analysis | IBM HR Analytics | Nested IF, AVERAGEIF, MINIFS, MAXIFS, COUNTIFS |
+| Day 2 | Employee Profiles, Seniority Titles, Review Dates, WLB Report | IBM HR Analytics | EDATE, IFS, IF AND, COUNTIFS, TRIM, PROPER, LOWER |
+| Day 3 | Invoice Builder, Discount Engine, Missing Product Audit, Pricing Matrix | Superstore Sales | VLOOKUP, Nested VLOOKUP, IFERROR, AVERAGEIFS, MATCH |
+| Day 4 | Coming soon | Superstore Sales | |
+| Day 5 | Coming soon | Superstore Sales | |
+| Day 6 | Coming soon | Superstore Sales | |
+| Day 7 | Coming soon | Hotel Booking | |
+| Day 8 | Coming soon | Students Performance | |
+| Day 9 | Coming soon | Netflix Stock | |
+| Day 10 | Coming soon | Superstore Sales | |
+
+### SQL (Days 11–22)
+| Day | Project | Dataset | Key Skills |
+|-----|---------|---------|------------|
+| Day 11–22 | Coming soon | | |
+
+### Power BI (Days 23–32)
+| Day | Project | Dataset | Key Skills |
+|-----|---------|---------|------------|
+| Day 23–32 | Coming soon | | |
+
+### Python (Days 33–40)
+| Day | Project | Dataset | Key Skills |
+|-----|---------|---------|------------|
+| Day 33–40 | Coming soon | | |
+
+### Capstone (Days 41–45)
+| Day | Project | Dataset | Key Skills |
+|-----|---------|---------|------------|
+| Day 41–45 | Coming soon | | |
+
+---
+
 ## 📈 Daily Commit Log
 I will be pushing to this repo every day. Check the commit history to see daily progress.
 
