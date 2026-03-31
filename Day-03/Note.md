@@ -135,6 +135,60 @@ their formulas even when the data is perfect.
 Always verify both directions — that the flag catches
 errors AND that it clears when data is fixed.
 
+### Task 4 — Cross Sheet Revenue Summary
+
+Columns used: Sales, Profit, Discount, Category
+
+Method: Added Category helper column to Orders sheet
+via VLOOKUP from Products sheet using Product ID.
+Built summary table using SUMIF and AVERAGEIF — no pivot.
+
+Formulas used:
+Total Revenue:
+=SUMIF(Order[Category],"Furniture",Order[Sales])
+
+Total Profit:
+=SUMIF(Order[Category],"Furniture",Order[Profit])
+
+Avg Discount:
+=AVERAGEIF(Order[Category],"Furniture",Order[Discount])
+
+Profit Margin %:
+=Total Profit/Total Revenue
+
+Revenue Share %:
+=Category Revenue/SUM(All Revenue)
+
+Results:
+Furniture       → $742k revenue | 2% margin  | 32.3% share
+Office Supplies → $719k revenue | 17% margin | 31.3% share
+Technology      → $836k revenue | 17% margin | 36.4% share
+Total Revenue   → $2.297M
+
+Key findings:
+1. Technology is the strongest category — highest revenue
+   AND highest profit at $145k
+2. Furniture is a major concern — $742k revenue but only
+   2% profit margin. High discount rate of 17.4% is likely
+   the primary cause of margin erosion
+3. Office Supplies is the most efficient category — lowest
+   revenue but matches Technology's 17% profit margin
+
+Business recommendations:
+1. Reduce Furniture discounts immediately — current 17.4%
+   average discount is unsustainable at a 2% margin
+2. Invest more in Technology — best performing category
+   on both revenue and profitability
+3. Investigate Furniture cost structure — even with zero
+   discounts the margins may still be concerning
+
+What I learned:
+High revenue does not equal high profit. Furniture
+generates more revenue than Office Supplies but makes
+6x less profit. Margin % tells the real story — not
+total sales figures. This is one of the most important
+lessons in business analytics.
+
 ---
 
 ## 🔑 Key Formulas Learned
