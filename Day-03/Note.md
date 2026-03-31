@@ -59,6 +59,42 @@ What I learned: Data Validation turns a basic lookup
 into a user friendly tool. This is the difference between
 a formula and an actual application.
 
+### Task 2 — Tiered Discount Engine
+
+Discount table built on Summary sheet:
+Furniture        → 15%
+Office Supplies  → 10%
+Technology       → 20%
+
+New columns added to Working sheet:
+- Category Discount
+- Discounted Revenue
+
+Formulas used:
+
+Category Discount:
+=IFERROR(VLOOKUP([@Category],DiscountTable,2,0),"No Discount")
+
+Discounted Revenue:
+=IFERROR([@Sales]*[@Quantity]*(1-VLOOKUP([@Category],
+DiscountTable,2,0)),[@Sales]*[@Quantity])
+
+Error handling logic:
+- Category found → correct discount applied
+- Category not found → "No Discount" shown
+- Revenue fallback → full price calculated if no discount
+
+What I learned:
+IFERROR is not just about hiding errors — it is about
+defining what should happen when something goes wrong.
+In real business data not every value is guaranteed to
+exist in a reference table so always plan for missing data.
+
+Business logic: If a new category is added to the dataset
+in future, the formula automatically falls back to full
+price instead of breaking. This makes the model resilient
+and production ready.
+
 ---
 
 ## 🔑 Key Formulas Learned
