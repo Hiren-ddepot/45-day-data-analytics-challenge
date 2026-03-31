@@ -160,10 +160,15 @@ Revenue Share %:
 =Category Revenue/SUM(All Revenue)
 
 Results:
+
 Furniture       → $742k revenue | 2% margin  | 32.3% share
+
 Office Supplies → $719k revenue | 17% margin | 31.3% share
+
 Technology      → $836k revenue | 17% margin | 36.4% share
+
 Total Revenue   → $2.297M
+
 
 Key findings:
 1. Technology is the strongest category — highest revenue
