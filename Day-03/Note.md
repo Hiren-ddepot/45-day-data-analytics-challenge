@@ -95,6 +95,46 @@ in future, the formula automatically falls back to full
 price instead of breaking. This makes the model resilient
 and production ready.
 
+### Task 3 — Missing Product Audit
+
+Dataset observation: No missing Product IDs existed in
+the original Superstore dataset — it is a clean dataset.
+
+Approach: Manually introduced 10 fake Product IDs
+(FAKE-001 to FAKE-010) into the Orders sheet to simulate
+real world missing data scenarios.
+
+Flag column added to Orders sheet: Product Flag
+Formula:
+=IFERROR(VLOOKUP([@[Product ID]],
+Product[[#All],[Product ID]:[Sub-Category]],2,0),"MISSING")
+
+Summary sheet audit results:
+Total Orders           → 9,994
+Missing Product Orders → 10 (after introducing fake IDs)
+Clean Orders           → 9,984
+
+Verification:
+COUNTIF returned 10 after introducing fake IDs ✅
+COUNTIF returned 0 after reverting to originals ✅
+
+Missing products extracted using:
+=FILTER(Order[Product ID],Order[Product Flag]="MISSING")
+
+Real world relevance: In real business data Product IDs
+go missing when:
+- Products are discontinued
+- Data is migrated from another system
+- Products are deleted from the master catalog
+This audit formula would catch all those cases automatically.
+
+What I learned:
+Clean datasets do not always reflect real world scenarios.
+A good analyst knows how to simulate edge cases to test
+their formulas even when the data is perfect.
+Always verify both directions — that the flag catches
+errors AND that it clears when data is fixed.
+
 ---
 
 ## 🔑 Key Formulas Learned
