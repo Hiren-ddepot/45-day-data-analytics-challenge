@@ -17,7 +17,7 @@
 
 | Phase | Days | Focus | Status |
 |-------|------|-------|--------|
-| 📗 Excel | 1–10 | Formulas, Pivots, Dashboards | 🔄 In Progress |
+| 📗 Excel | 1–10 | Formulas, Pivots, Dashboards | ✅ Day 1, 2, 3 & 4 Done |
 | 📘 SQL | 11–22 | Queries, Joins, Window Functions | ⏳ Upcoming |
 | 📙 Power BI | 23–32 | Dashboards, DAX, Storytelling | ⏳ Upcoming |
 | 📕 Python | 33–40 | Pandas, Matplotlib, EDA | ⏳ Upcoming |
@@ -33,13 +33,14 @@
 | Day 1 | Salary & Tax Calculator | IBM HR Analytics | Nested IF, AVERAGEIF, SUMIF |
 | Day 2 | Employee Tenure Analysis | IBM HR Analytics | EDATE, IFS, COUNTIF, IF AND |
 | Day 3 | Order Invoice Lookup System | Superstore Sales | VLOOKUP, IFERROR |
-| Day 4 | Sales Performance Tracker | Superstore Sales | XLOOKUP, IFS, SUMIFS |
-| Day 5 | Profitability Pivot Analysis | Superstore Sales | Pivot Tables, Calculated Fields |
-| Day 6 | Sales Dashboard v1 | Superstore + Walmart | Pivot Charts, Slicers |
-| Day 7 | Hotel Booking Data Cleaning | Hotel Booking Demand | TRIM, QUARTILE, Data Validation |
-| Day 8 | Student Performance Analysis | Students Exam Scores | INDEX/MATCH, FILTER, LARGE |
-| Day 9 | Stock Price Visualization | Netflix Stock | Charts, Moving Averages |
-| Day 10 | Full Sales Dashboard | Superstore Sales | End-to-End Excel Project |
+| Day 4 | TS Academy Sales Dashboard | Nigerian Sales Data | Pivot Tables, KPI Cards, Slicers, Data Analysis |
+| Day 5 | Sales Performance Tracker | Superstore Sales | XLOOKUP, IFS, SUMIFS |
+| Day 6 | Profitability Pivot Analysis | Superstore Sales | Pivot Tables, Calculated Fields |
+| Day 7 | Sales Dashboard v1 | Superstore + Walmart | Pivot Charts, Slicers |
+| Day 8 | Hotel Booking Data Cleaning | Hotel Booking Demand | TRIM, QUARTILE, Data Validation |
+| Day 9 | Student Performance Analysis | Students Exam Scores | INDEX/MATCH, FILTER, LARGE |
+| Day 10 | Stock Price Visualization | Netflix Stock | Charts, Moving Averages |
+| Day 11 | Full Sales Dashboard | Superstore Sales | End-to-End Excel Project |
 
 ---
 
@@ -49,7 +50,7 @@
 | Day 1 | Salary Tax Calculator, Department Audit, Attrition Analysis | IBM HR Analytics | Nested IF, AVERAGEIF, MINIFS, MAXIFS, COUNTIFS |
 | Day 2 | Employee Profiles, Seniority Titles, Review Dates, WLB Report | IBM HR Analytics | EDATE, IFS, IF AND, COUNTIFS, TRIM, PROPER, LOWER |
 | Day 3 | Invoice Builder, Discount Engine, Missing Product Audit, Pricing Matrix | Superstore Sales | VLOOKUP, Nested VLOOKUP, IFERROR, AVERAGEIFS, MATCH |
-| Day 4 | Coming soon | Superstore Sales | |
+| Day 4 | TS Academy Sales Dashboard  | Nigerian Sales Data | Pivot Tables, KPI Cards, Slicers, Data Analysis |
 | Day 5 | Coming soon | Superstore Sales | |
 | Day 6 | Coming soon | Superstore Sales | |
 | Day 7 | Coming soon | Hotel Booking | |
