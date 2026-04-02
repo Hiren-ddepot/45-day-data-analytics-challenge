@@ -102,10 +102,3 @@ Applied independently from Day 3 nested VLOOKUP concept.
 
 ## 🔗 LinkedIn Post
 [paste your LinkedIn post URL after posting]
-```
-
----
-
-**Commit message:**
-```
-Day 4 started — XLOOKUP, IF Logic & SUMIFS | Customer profile card, performance scorecard, regional targets, business questions, top-N finder
