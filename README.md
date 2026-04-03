@@ -17,7 +17,7 @@
 
 | Phase | Days | Focus | Status |
 |-------|------|-------|--------|
-| 📗 Excel | 1–10 | Formulas, Pivots, Dashboards | ✅ Day 1, 2, 3, 4, & 5 Done |
+| 📗 Excel | 1–10 | Formulas, Pivots, Dashboards | ✅ Day 1, 2, 3, 4, 5, & 6 Done |
 | 📘 SQL | 11–22 | Queries, Joins, Window Functions | ⏳ Upcoming |
 | 📙 Power BI | 23–32 | Dashboards, DAX, Storytelling | ⏳ Upcoming |
 | 📕 Python | 33–40 | Pandas, Matplotlib, EDA | ⏳ Upcoming |
@@ -52,7 +52,7 @@
 | Day 3 | Invoice Builder, Discount Engine, Missing Product Audit, Pricing Matrix | Superstore Sales | VLOOKUP, Nested VLOOKUP, IFERROR, AVERAGEIFS, MATCH |
 | Day 4 | TS Academy Sales Dashboard  | Nigerian Sales Data | Pivot Tables, KPI Cards, Slicers, Data Analysis |
 | Day 5 | Sales Performance Tracker | Superstore Sales | XLOOKUP, IFS, SUMIFS, ROUNDUP, LARGE, FILTER |
-| Day 6 | Coming soon | Superstore Sales | |
+| Day 6 | Profitability Matrix, YoY Trend, RFM Analysis, Shipping Efficiency, Loss Maker Dashboard | Superstore Sales | Pivot Tables, Calculated Fields, Color Scale, Value Filters, RFM |
 | Day 7 | Coming soon | Hotel Booking | |
 | Day 8 | Coming soon | Students Performance | |
 | Day 9 | Coming soon | Netflix Stock | |
