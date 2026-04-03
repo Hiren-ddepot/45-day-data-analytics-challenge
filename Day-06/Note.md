@@ -323,7 +323,7 @@ actually is before I could build it correctly.
 
 Always understand before jumping in.
 
-This is my biggest lesson from Day 5. Every time
+This is my biggest lesson from Day 6. Every time
 I read a task fully, thought about what the output
 should look like, and planned my approach first —
 the build was smooth. Every time I jumped straight
@@ -342,7 +342,7 @@ Understand the question before answering it.
 ---
 
 ## 📁 Files in This Folder
-- day05_superstore.xlsx
+- day06_superstore.xlsx
 - notes.md
 
 ---
