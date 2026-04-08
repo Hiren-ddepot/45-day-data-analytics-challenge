@@ -53,7 +53,7 @@
 | Day 4 | TS Academy Sales Dashboard  | Nigerian Sales Data | Pivot Tables, KPI Cards, Slicers, Data Analysis |
 | Day 5 | Sales Performance Tracker | Superstore Sales | XLOOKUP, IFS, SUMIFS, ROUNDUP, LARGE, FILTER |
 | Day 6 | Profitability Matrix, YoY Trend, RFM Analysis, Shipping Efficiency, Loss Maker Dashboard | Superstore Sales | Pivot Tables, Calculated Fields, Color Scale, Value Filters, RFM |
-| Day 7 | Sales Performance Dashboard | Superstore Pivot Charts, KPI Cards, Slicers, Combo Chart, Loss Investigation, Customer Funnel |
+| Day 7 | Sales Performance Dashboard | Superstore | Pivot Charts, KPI Cards, Slicers, Combo Chart, Loss Investigation, Customer Funnel |
 | Day 7 | Coming soon | Hotel Booking | |
 | Day 8 | Coming soon | Students Performance | |
 | Day 9 | Coming soon | Netflix Stock | |
