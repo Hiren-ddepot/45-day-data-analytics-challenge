@@ -34,11 +34,13 @@ Blank cells:               0
 Inconsistent values:       0 visible
 
 NULL values found:
-Column      NULL Count    % of Rows    Likely Meaning
-children    79,027        66.2%        No children on booking
-company     82,136        68.8%        Not a company booking
-agent       12,193        10.2%        No agent used
-country     452           0.4%         Country unknown
+
+| Column | NULL Count | % of Rows | Likely Meaning |
+|--------|------------|-----------|----------------|
+| children | 79,027 | 66.2% | No children on booking |
+| company | 82,136 | 68.8% | Not a company booking |
+| agent | 12,193 | 10.2% | No agent used |
+| country | 452 | 0.4% | Country unknown |
 
 Duplicate check process:
 Data → Remove Duplicates →
