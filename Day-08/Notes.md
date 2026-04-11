@@ -1,10 +1,10 @@
-# Day 7 — Data Cleaning
+# Day 8 — Data Cleaning
 ## Hotel Booking Demand Dataset
 
 **Date:** 10/04/2026
 **Dataset:** Hotel Booking Demand
 **Source:** Kaggle — jessemostipak
-**Time spent:** 
+**Time spent: 03:11:25
 
 ---
 
@@ -26,13 +26,13 @@ before cleaning — document first, clean second.
 
 
 Raw dataset statistics:  
-Total rows (inc header):   119,391  
-Total rows (exc header):   119,390  
-Total columns:             32  
-Unique rows:               87,396  
-Duplicate rows:            31,994 (26.8%)  
-Blank cells:               0  
-Inconsistent values:       0 visible  
+  Total rows (inc header):   119,391  
+  Total rows (exc header):   119,390  
+  Total columns:             32  
+  Unique rows:               87,396  
+  Duplicate rows:            31,994 (26.8%)  
+  Blank cells:               0  
+  Inconsistent values:       0 visible  
 NULL values found:   
 | Column | NULL Count | % of Rows | Likely Meaning |
 |--------|------------|-----------|----------------|
@@ -42,10 +42,10 @@ NULL values found:
 | country | 452 | 0.4% | Country unknown |
 
 Duplicate check process:  
-Data → Remove Duplicates →  
-All 32 columns selected →  
-39,994 duplicate rows removed  
-Remaining rows after dedup: 87,396 ✅   
+  Data → Remove Duplicates →  
+  All 32 columns selected →  
+  39,994 duplicate rows removed  
+  Remaining rows after dedup: 87,396 ✅   
 
 Important note on duplicates:
 In hotel bookings two guests can book the same
@@ -56,11 +56,11 @@ This is why all 32 columns were selected before
 running Remove Duplicates.
 
 Audit findings summary:  
-Issue 1: 31,994 duplicate rows (26.8%) — FIXED  
-Issue 2: NULL values in 4 columns — see Task 2   
-Issue 3: Date stored in 3 separate columns — see Task 3  
-Issue 4: ADR column has outliers — see Task 4  
-Issue 5: Meal codes are abbreviated — see Task 5    
+  Issue 1: 31,994 duplicate rows (26.8%) — FIXED  
+  Issue 2: NULL values in 4 columns — see Task 2   
+  Issue 3: Date stored in 3 separate columns — see Task 3  
+  Issue 4: ADR column has outliers — see Task 4  
+  Issue 5: Meal codes are abbreviated — see Task 5    
 Audit completed: 10/04/2026  
 
 ---
@@ -351,10 +351,10 @@ Not all duplicates are errors — context determines correctness.
     Business meaningful? → No  
 
 👉 Key takeaway:
-Real-world analysis requires combining:
+Real-world analysis requires combining:  
+  Statistical methods  
+  Domain judgment
 
-**Statistical methods  
-Domain judgment**
 ---
 
 ## 🔄 What I'd Do Differently
