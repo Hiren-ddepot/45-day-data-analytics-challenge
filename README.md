@@ -17,7 +17,7 @@
 
 | Phase | Days | Focus | Status |
 |-------|------|-------|--------|
-| 📗 Excel | 1–10 | Formulas, Pivots, Dashboards | ✅ Day 1, 2, 3, 4, 5, 6, 7, 8 & 9 Done |
+| 📗 Excel | 1–10 | Formulas, Pivots, Dashboards, Power Query, DAX | ✅ COMPLETE |
 | 📘 SQL | 11–22 | Queries, Joins, Window Functions | ⏳ Upcoming |
 | 📙 Power BI | 23–32 | Dashboards, DAX, Storytelling | ⏳ Upcoming |
 | 📕 Python | 33–40 | Pandas, Matplotlib, EDA | ⏳ Upcoming |
@@ -39,8 +39,7 @@
 | Day 7 | Sales Dashboard v1 | Superstore + Walmart | Pivot Charts, Slicers |
 | Day 8 | Hotel Booking Data Cleaning | Hotel Booking Demand | TRIM, QUARTILE, Data Validation |
 | Day 9 | Student Performance Analysis | Students Exam Scores | INDEX/MATCH, FILTER, LARGE |
-| Day 10 | Stock Price Visualization | Netflix Stock | Charts, Moving Averages |
-| Day 11 | Full Sales Dashboard | Superstore Sales | End-to-End Excel Project |
+| Day 10 | Full Sales Dashboard | Superstore Sales | End-to-End Excel Project |
 
 ---
 
@@ -56,8 +55,7 @@
 | Day 7 | Sales Performance Dashboard | Superstore | Pivot Charts, KPI Cards, Slicers, Combo Chart, Loss Investigation, Customer Funnel |
 | Day 8 | Hotel Booking Data Cleaning | Hotel Booking | TRIM, QUARTILE, Data Validation |
 | Day 9 | Grade Lookup, Top 10 Ranking, Test Prep Impact, Parental Education Analysis, At-Risk Student Alert | Students Performance | INDEX/MATCH, LARGE, AVERAGEIF, COUNTIF, FILTER |
-| Day 10 | Coming soon | Netflix Stock | |
-| BONUS | Coming soon | Superstore Sales | |
+| Day 10 | Superstore Sales BI Dashboard |Power Query + Data Model + DAX | Star Schema, CALCULATE, ALLEXCEPT, DIVIDE, SWITCH, Combo Charts, Slicers |
 
 ### SQL (Days 11–22)
 | Day | Project | Dataset | Key Skills |
