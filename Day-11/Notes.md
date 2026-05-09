@@ -69,8 +69,39 @@ SQLite Database
 → Analytical SQL Views Creation  
 → BI-Ready Data Model  
 
+---
+
 ### Superstore Database
-[fill in after running checks]
+
+## 🗄️ Database Setup
+
+### Superstore Star Schema
+Built a production-grade star schema from raw CSV:
+
+### Architecture:
+FactSales (core fact table)
+- Row_ID (PK), Order_ID, Customer_ID (FK)
+- Product_ID (FK), Postal_Code (FK)
+- Ship_Mode (FK), Order_Date, Ship_Date
+- Sales, Quantity, Discount, Profit
+- Order_DateKey (FK), Ship_DateKey (FK)
+
+#### Dimension Tables:
+DimCustomer  → Customer_ID, Customer_Name, Segment  
+DimProduct   → Product_ID, Category, Sub_Category, Product_Name  
+DimLocation  → Postal_Code, City, State, Country, Region  
+DimShipping  → Ship_Mode  
+DimDate      → DateKey, FullDate, Year, Month, MonthName,
+               Quarter, Day, WeekDay  
+
+#### Key technical achievements:
+- Converted NVARCHAR → DATE for date columns
+- Converted Sales → DECIMAL for numeric precision
+- Fixed bulk load errors
+- Deduplicated DimLocation using ROW_NUMBER()
+- Generated DimDate dynamically using recursive CTE
+  from MIN/MAX dates in dataset
+- Established all foreign key relationships
 
 ---
 
